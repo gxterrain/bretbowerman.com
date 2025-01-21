@@ -21,6 +21,10 @@ video {
   z-index: -1;
 }
 
+.xpWfed {
+  display: none;
+}
+
 @media only screen and (max-width: 600px){
 	iframe {
 		margin-top: 10vh;
