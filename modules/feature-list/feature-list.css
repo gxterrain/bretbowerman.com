@@ -1,0 +1,46 @@
+:root {
+
+	--text-color: #1d2c4a;
+	--border-color: #1d2c4a;
+
+	transition: all 2s ease-in-out;
+}
+
+feature-list-module {
+	margin-bottom: 2rem;
+
+	feature-grid-container {
+		display: grid;
+		grid-template-columns: 25% 75%;
+		gap: 1rem;
+
+		color: var(--text-color);
+
+		project-detail {
+			grid-column: span 2;
+
+			@media (width >= 900px){
+				grid-column: unset;
+			}
+		}
+
+		@media (width >= 900px){
+			grid-template-columns: 50% 25% 25%;
+		}
+	}
+
+	picture {
+		width: 100%;
+		max-width: fit-content;
+	}
+
+	hr {
+		border: 1px solid var(--border-color);
+		margin-bottom: 1rem;
+	}
+
+	p {
+		text-wrap: pretty;
+		line-height: 1.2;
+	}
+}

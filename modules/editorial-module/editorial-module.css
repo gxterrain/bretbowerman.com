@@ -1,0 +1,70 @@
+:root {
+
+	--section-bg: whitesmoke;
+	--card-bg: #d7cab5;
+	--btn-bg: #b2dbff;
+
+/*	.darkmode {
+		--section-bg: darkslategray;
+		--card-bg: #181818;
+		--btn-bg: #181818;
+		color: whitesmoke;
+}*/
+
+	transition: all 2s ease-in-out;
+}
+
+editorial-module {
+	display: block;
+	
+	padding: 2rem;
+
+	text-wrap: balance;
+
+	editorial-header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		text-align: center;
+	}
+
+	.loud-voice {
+		font-size: clamp(1.875rem, 4vw, 3.5rem);
+		letter-spacing: -1px;
+	}
+
+	p {
+		max-width: 60ch;
+		line-height: 1.2;
+	}
+
+	.attention-voice {
+		font-size: clamp(1.125rem, 1.75vw, 2rem);
+		}
+
+	picture {
+		max-width: 70%;
+		margin: 2rem 0;
+	}
+
+	editorial-footer {
+		display: grid;
+		justify-items: center;
+		gap: 1rem;
+
+		text-transform: uppercase;
+		text-align: center;
+
+		.role {
+			font-weight: 100;
+			margin-bottom: .25rem;
+			text-transform: lowercase;
+		}
+
+		@media (width >= 950px){
+			grid-template-columns: repeat(3, 1fr);
+			gap: 3rem;
+		}
+	}
+}

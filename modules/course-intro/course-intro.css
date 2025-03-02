@@ -1,0 +1,122 @@
+:root {
+
+	--section-bg: whitesmoke;
+	--card-bg: #d7cab5;
+	--btn-bg: #b2dbff;
+}
+
+course-module {
+	padding-bottom: 1rem;
+	
+	strong {
+		font-weight: 900;
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		justify-content: space-between;
+
+		@media (width >= 800px){
+				flex-direction: row;
+		}
+
+		.category {
+			display: inline-block;
+			max-width: fit-content;
+
+			padding: .5rem .25rem;
+
+			background-color: black;
+			color: whitesmoke;
+
+			@media (width >= 800px){
+				transform: rotate(90deg);
+			}
+
+		}
+	}
+
+	work-experience {
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: 1rem;
+
+		padding: 1rem 0 3rem 0;
+
+		@media (width >= 600px){
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 4rem;
+		}
+
+		@media (width >= 800px){
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 6rem;
+		}
+
+		h2.elevated-voice {
+			max-width: 20ch;
+			font-weight: 600;
+		}
+
+		a {
+			font-weight: 600;
+			text-decoration: underline;
+
+			display: flex;
+			flex-direction: row;
+			gap: 1rem;
+		}
+
+		.duration {
+			color: dimgray;
+			text-wrap: balance;
+		}
+	}
+
+	booking {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+
+		@media (width >= 600px){
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: 2rem;
+		}
+
+		booking-card {
+			display: block;
+
+			card-header {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				align-items: center;
+				gap: 1rem;
+
+					svg {
+						max-width: 40px;
+						aspect-ratio: 1 / 1;
+					}
+
+					h3 {
+						font-weight: 900;
+					}
+			}
+
+			a {
+				color: black;
+			}
+		}
+	}
+
+	hr {
+		border: 1px solid lightgray;
+	}
+
+
+	p {
+		line-height: 1.2;
+	}
+}

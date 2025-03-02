@@ -16,10 +16,23 @@ p a {
 
 picture {
   display: block;
+  overflow: hidden;
 }
 
 img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+inner-column {
+  display: block;
+  width: 90vw;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-top: 1rem;
+}
+
+:where(:not(:defined)) {
+  display: block;
 }

@@ -1,0 +1,50 @@
+logo-module {
+	display: grid;
+	grid-column: 1fr;
+	gap: 2rem;
+/*	background-color: #327689;*/
+	padding: 2rem 0;
+
+	@media (width >= 800px){
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+	logo-header {
+		color: whitesmoke;
+		max-width: 40ch;
+
+		h3 {
+			font-family: "impact", sans-serif;
+			font-size: 2rem;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			font-size: 1.125rem;
+			line-height: 1.2;
+		}
+	}
+
+	logo-list {
+	 	display: block;
+
+		ul {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: .5rem;
+
+			@media (width >= 800px){
+				grid-template-columns: repeat(4, 1fr);
+			}
+
+			li {
+
+			}
+		}
+
+		picture {
+			aspect-ratio: 1 / 1;
+			width: 100%;
+			height: auto;
+		}
+	}
